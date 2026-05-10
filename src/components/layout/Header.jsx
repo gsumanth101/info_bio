@@ -1,14 +1,15 @@
 import React from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Brain, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { navItems } from '../../data/siteContent.jsx';
+import { inverseBionicsLogo } from '../../assets/brand/logo.js';
 
 export function Header({ active, menuOpen, onOpenMenu, onCloseMenu }) {
   return (
     <>
       <header className="nav-wrap">
         <a className="brand" href="#home" aria-label="Inverse Bionics home">
-          <span className="brand-mark"><Brain size={18} /></span>
+          <span className="brand-mark image-mark"><img src={inverseBionicsLogo} alt="" aria-hidden="true" /></span>
           <span>Inverse Bionics</span>
         </a>
         <nav className="desktop-nav" aria-label="Primary navigation">
