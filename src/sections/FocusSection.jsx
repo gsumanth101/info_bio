@@ -13,11 +13,11 @@ export function FocusSection() {
       <SectionIntro
         eyebrow="What We Do"
         title="Cognitive-health systems for the full spectrum of human performance."
-        text="We address memory, attention, sleep, executive function, language processing, sensory processing, motor function, learning efficiency, and social cognition."
+        text="We support essential aspects of daily functioning, including focus, rest, communication, coordination, learning, and social engagement."
       />
-      <div className="focus-marquee" aria-label="Focus areas">
+      {/* <div className="focus-marquee" aria-label="Focus areas">
         {[...focusAreas, ...focusAreas].map((area, index) => <span key={`${area}-${index}`}>{area}</span>)}
-      </div>
+      </div> */}
       <Reveal className="focus-illustration">
         <IllustrationPanel
           eyebrow="AI + multimodal data"

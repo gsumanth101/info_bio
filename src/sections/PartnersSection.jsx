@@ -13,7 +13,7 @@ export function PartnersSection() {
       <SectionIntro
         eyebrow="Partner With Us"
         title="Let's strengthen cognitive health together."
-        text="Whether you're a government leader, healthcare organization, or corporation seeking meaningful CSR impact, we welcome partnerships that move the world toward better cognitive wellbeing."
+        text="We partner with governments, healthcare organizations, and mission driven companies to create real, measurable impact in global cognitive wellbeing."
       />
       <div className="partner-layout">
         <Reveal className="partner-card primary">
@@ -25,8 +25,8 @@ export function PartnersSection() {
             variant="compact"
             image={illustrations.liveCollaboration}
           />
-          <h3>Collaborate with Inverse Bionics</h3>
-          <p>We collaborate with state and regional health agencies, educational institutions, corporations and CSR programs, nonprofits and community organizations, research labs, and innovation hubs.</p>
+          {/* <h3>Collaborate with Inverse Bionics</h3>
+          <p>We collaborate with state and regional health agencies, educational institutions, corporations and CSR programs, nonprofits and community organizations, research labs, and innovation hubs.</p> */}
           <MagneticButton href="#contact">Start a Partnership <ArrowRight size={18} /></MagneticButton>
         </Reveal>
         <div className="trust-grid">

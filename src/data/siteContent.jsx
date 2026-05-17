@@ -47,16 +47,16 @@ export const focusAreas = [
 ];
 
 export const whatWeDo = [
-  {
-    icon: DatabaseZap,
-    title: 'Multimodal Data Integration',
-    text: 'We combine cellular, molecular, electrophysiology, behavioral, and environmental data to understand cognitive patterns at multiple levels.'
-  },
-  {
-    icon: Cpu,
-    title: 'AI-Driven Insight Generation',
-    text: 'Advanced models help us detect early cognitive stressors and performance changes long before they become visible.'
-  },
+  // {
+  //   icon: DatabaseZap,
+  //   title: 'Multimodal Data Integration',
+  //   text: 'We combine cellular, molecular, electrophysiology, behavioral, and environmental data to understand cognitive patterns at multiple levels.'
+  // },
+  // {
+  //   icon: Cpu,
+  //   title: 'AI-Driven Insight Generation',
+  //   text: 'Advanced models help us detect early cognitive stressors and performance changes long before they become visible.'
+  // },
   {
     icon: HeartPulse,
     title: 'Human-Centered Solutions',
@@ -70,35 +70,21 @@ export const whatWeDo = [
 ];
 
 export const advisorAreas = [
-  'Neurotechnology and computational neuroscience',
-  'Psychiatry and cognitive rehabilitation',
-  'AI, machine learning, and data science',
-  'Public health and policy',
-  'Corporate innovation and leadership strategy'
+  'Academic & Federal Research Leadership',
+  'Industry Technology & Innovation Leaders',
+  'Global Policy & Strategic Impact Experts'
 ];
 
 export const participantGroups = [
-  'Undergraduate and graduate students',
-  'Students within three years of graduation',
-  'Young innovators passionate about neuroscience, AI, public health, or human performance'
+  'Open to students, recent graduates, and early‑career innovators ready to shape the future of brain health'
 ];
 
 export const pitchTopics = [
-  'Cognitive decline',
-  'Memory and attention enhancement',
-  'Sleep and circadian optimization',
-  'Neurotechnology',
-  'AI for brain health',
-  'Learning and performance science',
-  'Social cognition and mental resilience'
+  'Pitch bold ideas in brain health, neurotechnology, AI, learning science, and human resilience.'
 ];
 
 export const participantBenefits = [
-  'Mentorship from world-class neuroscientists and neurotech leaders',
-  'Exposure to policymakers, industry executives, and research institutions',
-  'Opportunities for internships, collaborations, and project incubation',
-  'Recognition, awards, and potential funding pathways',
-  'A platform to shape the future of cognitive health'
+  'Gain mentorship, visibility, collaboration pathways, and a launchpad for real‑world impact.'
 ];
 
 export const partners = [
@@ -114,7 +100,7 @@ export const partnerReasons = [
   'Support early-detection and monitoring initiatives',
   'Strengthen workforce performance and resilience',
   'Advance public-health innovation',
-  'Contribute to global scientific progress'
+  // 'Contribute to global scientific progress'
 ];
 
 export const joinPaths = [
@@ -138,22 +124,22 @@ export const joinPaths = [
 export const interviewCards = [
   {
     type: 'Video interview',
-    title: 'Leader Name - Title',
-    text: 'Short description of their work and what the interview covers.',
+    title: 'Videos',
+    text: 'Watch inspiring talks and interviews from global leaders in brain science and technology.',
     action: 'Watch Video',
     icon: CirclePlay
   },
   {
     type: 'Written Q&A',
-    title: 'Leader Name - Title',
-    text: 'Short description highlighting their contributions.',
+    title: 'Articles',
+    text: 'Explore sharp insights and expert perspectives shaping the future of neuroscience and AI.',
     action: 'Read Interview',
     icon: MessageSquareText
   },
   {
     type: 'Nomination',
-    title: 'Nominate a Leader',
-    text: 'Know someone whose work deserves to be highlighted?',
+    title: 'Nominate Experts',
+    text: 'Nominate standout leaders in neuroscience, technology, and policy to join our global network.',
     action: 'Submit a Nomination',
     icon: Sparkles
   }

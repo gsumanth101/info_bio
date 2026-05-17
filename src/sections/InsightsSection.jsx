@@ -12,9 +12,9 @@ export function InsightsSection() {
       <SectionIntro
         eyebrow="Leadership Interviews & Insights"
         title="Conversations with the minds shaping cognitive health."
-        text="This page features interviews, talks, and perspectives from global leaders across neuroscience, neurotechnology, AI, public health, and human-performance science."
+        text="Featuring interviews, talks, and insights from global leaders in neuroscience, neurotechnology, AI, public health, and human‑performance science."
       />
-      <Reveal className="insights-illustration">
+      {/* <Reveal className="insights-illustration">
         <IllustrationPanel
           eyebrow="Leadership voices"
           title="Talks, interviews, podcasts, keynote sessions, and emerging perspectives."
@@ -22,7 +22,7 @@ export function InsightsSection() {
           variant="wide"
           image={illustrations.publicSpeaking}
         />
-      </Reveal>
+      </Reveal> */}
       <div className="media-row">
         {interviewCards.map((card, index) => {
           const Icon = card.icon;
@@ -39,11 +39,11 @@ export function InsightsSection() {
           );
         })}
       </div>
-      <div className="tabs-panel">
+      {/* <div className="tabs-panel">
         {insightTopics.map(item => (
           <span key={item}><Check size={15} />{item}</span>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 }
