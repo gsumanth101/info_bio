@@ -14,7 +14,7 @@ export function ThinkTankSection() {
       <SectionIntro
         eyebrow="Inverse Bionics Annual Think Tank - Washington, D.C."
         title="A flagship event for real-world cognitive-health challenges."
-        text="Our flagship event brings together students, researchers, innovators, and global leaders to tackle real-world cognitive-health challenges."
+        text="Our flagship event unites emerging innovators and global leaders to solve real world challenges in cognitive health."
       />
       <div className="event-shell">
         <Reveal className="event-stage">
@@ -42,7 +42,7 @@ export function ThinkTankSection() {
       </div>
       <Reveal className="judging-panel">
         <h3>Judging Panel</h3>
-        <p>Our judges include internationally recognized leaders in neurotechnology, cognitive neuroscience, AI and computational modeling, and public health innovation.</p>
+        <p>Reviewed by top global experts in neurotechnology, cognitive neuroscience, AI modeling, and public-health innovation.</p>
       </Reveal>
     </section>
   );

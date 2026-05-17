@@ -12,9 +12,9 @@ export function AdvisorsSection() {
       <SectionIntro
         eyebrow="Guided by Global Leaders"
         title="Scientific rigor shaped by a cross-disciplinary advisory network."
-        text="These advisors shape our scientific direction, ensure rigor, and help us stay aligned with global needs and emerging breakthroughs."
+        text="Our advisors steer our scientific focus, reinforce rigor, and ensure we remain attuned to worldwide needs and new breakthroughs."
       />
-      <Reveal className="advisor-illustration">
+      {/* <Reveal className="advisor-illustration">
         <IllustrationPanel
           eyebrow="Clinical and scientific rigor"
           title="A grounded advisory layer for cognitive rehabilitation, public health, and neurotechnology."
@@ -22,7 +22,7 @@ export function AdvisorsSection() {
           variant="wide"
           image={illustrations.medicalCare}
         />
-      </Reveal>
+      </Reveal> */}
       <div className="advisor-grid">
         {advisorAreas.map((area, index) => (
           <Reveal delay={index * 0.06} className="advisor-card" key={area}>

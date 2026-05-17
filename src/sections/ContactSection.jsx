@@ -25,7 +25,7 @@ export function ContactSection({ onSubmit }) {
               image={illustrations.contactUs}
             />
           </Reveal>
-          {joinPaths.map((path, index) => {
+          {/* {joinPaths.map((path, index) => {
             const Icon = path.icon;
             return (
               <Reveal delay={index * 0.07} className="join-card" key={path.title}>
@@ -34,7 +34,7 @@ export function ContactSection({ onSubmit }) {
                 <p>{path.text}</p>
               </Reveal>
             );
-          })}
+          })} */}
         </div>
         <Reveal className="contact-form-card">
           <form onSubmit={onSubmit}>

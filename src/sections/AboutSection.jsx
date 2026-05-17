@@ -18,7 +18,7 @@ export function AboutSection() {
       <div className="bento-grid">
         <Reveal className="bento-card large">
           <span className="card-kicker">Our Mission</span>
-          <h3>Decipher, monitor, and mitigate cognitive decline.</h3>
+          {/* <h3>Decipher, monitor, and mitigate cognitive decline.</h3> */}
           <p>At Inverse Bionics, we bring together the world's best minds, breakthrough technologies, and cross-disciplinary insights to confront this challenge with clarity and purpose.</p>
           <div className="domain-cloud">
             {domains.map(domain => <span key={domain}>{domain}</span>)}
@@ -29,7 +29,7 @@ export function AboutSection() {
           <h3>Our Purpose</h3>
           <p>We exist to solve one of humanity's most urgent challenges: How do we protect and enhance the brain's ability to think, learn, adapt, and thrive?</p>
         </Reveal>
-        <Reveal delay={0.16} className="bento-card visual-card">
+        {/* <Reveal delay={0.16} className="bento-card visual-card">
           <IllustrationPanel
             eyebrow="Cross-disciplinary teams"
             title="Researchers, technologists, clinicians, policymakers, and industry leaders."
@@ -39,8 +39,8 @@ export function AboutSection() {
           />
           <h3>Human-centered strategy</h3>
           <p>Our work blends neuroscience, technology, and public-health strategy to create solutions that are practical, scalable, and human-centered.</p>
-        </Reveal>
-        <Reveal delay={0.24} className="bento-card timeline-card">
+        </Reveal> */}
+        {/* <Reveal delay={0.24} className="bento-card timeline-card">
           <span className="card-kicker">Mission / Vision</span>
           {missionSteps.map((item, index) => (
             <div className="timeline-item" key={item}>
@@ -48,7 +48,7 @@ export function AboutSection() {
               <p>{item}</p>
             </div>
           ))}
-        </Reveal>
+        </Reveal> */}
       </div>
     </section>
   );

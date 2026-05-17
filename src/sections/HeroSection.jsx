@@ -14,7 +14,7 @@ export function HeroSection() {
         <Reveal className="eyebrow"><Sparkles size={16} /> Cognitive health, neuroscience, AI, and innovation</Reveal>
         <Reveal delay={0.08} as="h1">Reimagining the Future of Cognitive Health</Reveal>
         <Reveal delay={0.16} className="hero-copy">
-          Cognitive decline is the world's fastest-growing public-health challenge. According to the CDC, 1 in 9 people experience measurable cognitive decline, and the impact spans every age group - from young adults to older populations.
+          According to the CDC, 1 in 9 people experience measurable cognitive decline, and the impact spans every age group - from young adults to older populations.
         </Reveal>
         <Reveal delay={0.24} className="hero-actions">
           <MagneticButton href="#contact">Join the Movement <ArrowRight size={18} /></MagneticButton>
