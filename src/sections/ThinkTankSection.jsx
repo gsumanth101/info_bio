@@ -6,7 +6,7 @@ import { InteractiveList } from '../components/ui/InteractiveList.jsx';
 import { Reveal } from '../components/ui/Reveal.jsx';
 import { SectionIntro } from '../components/ui/SectionIntro.jsx';
 import { illustrations } from '../data/illustrations.js';
-import { participantBenefits, participantGroups, pitchTopics } from '../data/siteContent.jsx';
+import { participantBenefits, participantGroups, pitchTopics, judgingPanel } from '../data/siteContent.jsx';
 
 export function ThinkTankSection() {
   return (
@@ -38,12 +38,13 @@ export function ThinkTankSection() {
           <InteractiveList title="Who Can Attend" items={participantGroups} />
           <InteractiveList title="What Participants Can Pitch" items={pitchTopics} />
           <InteractiveList title="Benefits for Participants" items={participantBenefits} />
+          <InteractiveList title="Judging Panel" items={judgingPanel} />
         </div>
       </div>
-      <Reveal className="judging-panel">
+      {/* <Reveal className="judging-panel">
         <h3>Judging Panel</h3>
         <p>Reviewed by top global experts in neurotechnology, cognitive neuroscience, AI modeling, and public-health innovation.</p>
-      </Reveal>
+      </Reveal> */}
     </section>
   );
 }
