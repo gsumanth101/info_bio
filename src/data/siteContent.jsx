@@ -87,6 +87,10 @@ export const participantBenefits = [
   'Gain mentorship, visibility, collaboration pathways, and a launchpad for real‑world impact.'
 ];
 
+export const judgingPanel = [
+  'Reviewed by top global experts in neurotechnology, cognitive neuroscience, AI modeling, and public-health innovation.'
+];
+
 export const partners = [
   'State and regional health agencies',
   'Educational institutions',

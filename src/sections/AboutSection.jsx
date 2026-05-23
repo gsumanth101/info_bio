@@ -16,7 +16,7 @@ export function AboutSection() {
       />
 
       <div className="bento-grid">
-        <Reveal className="bento-card large">
+        <Reveal className="bento-card medium-card">
           <span className="card-kicker">Our Mission</span>
           {/* <h3>Decipher, monitor, and mitigate cognitive decline.</h3> */}
           <p>At Inverse Bionics, we bring together the world's best minds, breakthrough technologies, and cross-disciplinary insights to confront this challenge with clarity and purpose.</p>
