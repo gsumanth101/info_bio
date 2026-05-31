@@ -1,12 +1,72 @@
-import React from 'react';
-import { ArrowRight } from 'lucide-react';
-import { IllustrationPanel } from '../components/ui/IllustrationPanel.jsx';
-import { Reveal } from '../components/ui/Reveal.jsx';
-import { SectionIntro } from '../components/ui/SectionIntro.jsx';
-import { illustrations } from '../data/illustrations.js';
-import { joinPaths } from '../data/siteContent.jsx';
+import React, { useState } from "react";
+import { ArrowRight } from "lucide-react";
+import toast from "react-hot-toast";
 
-export function ContactSection({ onSubmit }) {
+import { IllustrationPanel } from "../components/ui/IllustrationPanel.jsx";
+import { Reveal } from "../components/ui/Reveal.jsx";
+import { SectionIntro } from "../components/ui/SectionIntro.jsx";
+import { illustrations } from "../data/illustrations.js";
+
+export function ContactSection() {
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.target);
+
+    const payload = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      phone: formData.get("phone"),
+      message: formData.get("message"),
+      siteName:'Iverse Bionics',
+    };
+
+    setLoading(true);
+
+    const loadingToast = toast.loading("Submitting your request...");
+
+    try {
+      const response = await fetch(
+        "https://cust.gov2partner.com/",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload),
+        }
+      );
+
+      const data = await response.json();
+
+      toast.dismiss(loadingToast);
+
+      if (response.ok && data.success) {
+        toast.success(
+          data.message || "Form submitted successfully!"
+        );
+
+        e.target.reset();
+      } else {
+        toast.error(
+          data.message || "Failed to submit form."
+        );
+      }
+    } catch (error) {
+      toast.dismiss(loadingToast);
+
+      console.error(error);
+
+      toast.error(
+        "Unable to connect to server. Please try again."
+      );
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <section id="contact" className="section contact-section">
       <SectionIntro
@@ -14,6 +74,7 @@ export function ContactSection({ onSubmit }) {
         title="Be part of a global movement."
         text="Together, we can strengthen the world's cognitive future."
       />
+
       <div className="contact-grid">
         <div className="join-cards">
           <Reveal className="contact-illustration">
@@ -25,47 +86,61 @@ export function ContactSection({ onSubmit }) {
               image={illustrations.contactUs}
             />
           </Reveal>
-          {/* {joinPaths.map((path, index) => {
-            const Icon = path.icon;
-            return (
-              <Reveal delay={index * 0.07} className="join-card" key={path.title}>
-                <Icon size={24} />
-                <h3>{path.title}</h3>
-                <p>{path.text}</p>
-              </Reveal>
-            );
-          })} */}
         </div>
+
         <Reveal className="contact-form-card">
-          <form onSubmit={onSubmit}>
+          <form onSubmit={handleSubmit}>
             <label>
-              <input name="name" required placeholder=" " />
+              <input
+                name="name"
+                type="text"
+                required
+                placeholder=" "
+              />
               <span>Name</span>
             </label>
+
             <label>
-              <input name="email" required type="email" placeholder=" " />
+              <input
+                name="email"
+                type="email"
+                required
+                placeholder=" "
+              />
               <span>Email</span>
             </label>
-            {/* <label>
-              <select name="role" required defaultValue="">
-                <option value="" disabled>Choose your path</option>
-                <option>Technologist</option>
-                <option>State Leader</option>
-                <option>Volunteer</option>
-                <option>Student or Innovator</option>
-                <option>Partner Organization</option>
-              </select>
-              <span>Path</span>
-            </label> */}
+
             <label>
-              <input name="phone" required type="tel" placeholder=" " />
+              <input
+                name="phone"
+                type="tel"
+                required
+                placeholder=" "
+              />
               <span>Phone</span>
             </label>
+
             <label className="message-field">
-              <textarea name="message" required placeholder=" " rows="5" />
+              <textarea
+                name="message"
+                required
+                rows="5"
+                placeholder=" "
+              />
               <span>Message</span>
             </label>
-            <button type="submit">Send Signal <ArrowRight size={18} /></button>
+
+            <button
+              type="submit"
+              disabled={loading}
+              style={{
+                opacity: loading ? 0.7 : 1,
+                cursor: loading ? "not-allowed" : "pointer",
+              }}
+            >
+              {loading ? "Sending..." : "Send Signal"}
+              <ArrowRight size={18} />
+            </button>
           </form>
         </Reveal>
       </div>
