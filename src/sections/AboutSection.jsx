@@ -12,22 +12,22 @@ export function AboutSection() {
       <SectionIntro
         eyebrow="Who We Are"
         title="A think tank, innovation hub, and public-health partner."
-        text="Inverse Bionics is a Maryland-based organization dedicated to advancing cognitive health through science, engineering, and global collaboration. We unite researchers, technologists, clinicians, policymakers, and industry leaders."
+        text="Inverse Bionics is dedicated to advancing cognitive health through science, engineering, and global collaboration. We transform brain power by uniting researchers, technologists, clinicians, policymakers, and industry leaders."
       />
-
+ 
       <div className="bento-grid">
         <Reveal className="bento-card medium-card">
           <span className="card-kicker">Our Mission</span>
           {/* <h3>Decipher, monitor, and mitigate cognitive decline.</h3> */}
-          <p>At Inverse Bionics, we bring together the world's best minds, breakthrough technologies, and cross-disciplinary insights to confront this challenge with clarity and purpose.</p>
-          <div className="domain-cloud">
+          <p>At Inverse Bionics, we bring together the world’s best minds, breakthrough technologies, and cross disciplinary insights to confront this challenge with clarity and purpose.</p>
+          {/* <div className="domain-cloud">
             {domains.map(domain => <span key={domain}>{domain}</span>)}
-          </div>
+          </div> */}
         </Reveal>
         <Reveal delay={0.08} className="bento-card">
           <Target size={28} />
           <h3>Our Purpose</h3>
-          <p>We exist to solve one of humanity's most urgent challenges: How do we protect and enhance the brain's ability to think, learn, adapt, and thrive?</p>
+          <p>We exist to solve one of humanity’s most urgent challenges: <strong>How do we protect and enhance the brain's ability to think, learn, adapt, and thrive?</strong></p>
         </Reveal>
         {/* <Reveal delay={0.16} className="bento-card visual-card">
           <IllustrationPanel

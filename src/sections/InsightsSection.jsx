@@ -10,7 +10,7 @@ export function InsightsSection() {
   return (
     <section id="insights" className="section insights-section">
       <SectionIntro
-        eyebrow="Leadership Interviews & Insights"
+        eyebrow="Insights"
         title="Conversations with the minds shaping cognitive health."
         text="Featuring interviews, talks, and insights from global leaders in neuroscience, neurotechnology, AI, public health, and human‑performance science."
       />

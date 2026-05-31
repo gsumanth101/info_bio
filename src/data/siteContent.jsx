@@ -12,14 +12,14 @@ import {
 } from 'lucide-react';
 
 export const navItems = [
-  ['home', 'Home'],
-  ['about', 'About'],
+  // ['home', 'Home'],
+  ['about', 'Who We Are'],
   ['focus', 'What We Do'],
   ['advisors', 'Advisors'],
   ['thinktank', 'Think Tank'],
   ['insights', 'Insights'],
-  ['partners', 'Partners'],
-  ['contact', 'Join Us']
+  ['partners', 'Partnerships'],
+  ['contact', 'Contact With Us']
 ];
 
 export const domains = [
@@ -92,11 +92,11 @@ export const judgingPanel = [
 ];
 
 export const partners = [
-  'State and regional health agencies',
-  'Educational institutions',
-  'Corporations and CSR programs',
-  'Nonprofits and community organizations',
-  'Research labs and innovation hubs'
+  // 'State and regional health agencies',
+  // 'Educational institutions',
+  // 'Corporations and CSR programs',
+  // 'Nonprofits and community organizations',
+  // 'Research labs and innovation hubs'
 ];
 
 export const partnerReasons = [

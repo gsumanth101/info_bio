@@ -12,7 +12,7 @@ export function ThinkTankSection() {
   return (
     <section id="thinktank" className="section thinktank-section">
       <SectionIntro
-        eyebrow="Inverse Bionics Annual Think Tank - Washington, D.C."
+        eyebrow="Think Tank"
         title="A flagship event for real-world cognitive-health challenges."
         text="Our flagship event unites emerging innovators and global leaders to solve real world challenges in cognitive health."
       />
@@ -22,17 +22,17 @@ export function ThinkTankSection() {
             <IllustrationPanel
               eyebrow="Flagship event"
               title="Students and innovators pitch the future of cognitive health."
-              text="Washington, D.C."
+              text=""
               variant="event"
               image={illustrations.publicSpeaking}
             />
-            <div className="event-location"><MapPin size={22} /><span>Washington, D.C.</span></div>
+            {/* <div className="event-location"><MapPin size={22} /><span>Washington, D.C.</span></div> */}
           </div>
-          <div className="event-stats">
+          {/* <div className="event-stats">
             <div><strong><Counter value={3} /></strong><span>student tracks</span></div>
             <div><strong><Counter value={7} /></strong><span>pitch themes</span></div>
             <div><strong><Counter value={4} /></strong><span>judge domains</span></div>
-          </div>
+          </div> */}
         </Reveal>
         <div className="event-lists">
           <InteractiveList title="Who Can Attend" items={participantGroups} />

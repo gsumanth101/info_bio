@@ -11,7 +11,7 @@ export function PartnersSection() {
   return (
     <section id="partners" className="section partners-section">
       <SectionIntro
-        eyebrow="Partner With Us"
+        eyebrow="Strategic Partnership"
         title="Let's strengthen cognitive health together."
         text="We partner with governments, healthcare organizations, and mission driven companies to create real, measurable impact in global cognitive wellbeing."
       />

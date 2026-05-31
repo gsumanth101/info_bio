@@ -24,23 +24,25 @@ export function HeroSection() {
 
       <motion.div className="hero-dashboard" initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.35, duration: 0.9 }}>
         <div className="dash-top">
-          <span>Neural resilience index</span>
-          <Activity size={18} />
+          {/* <span>Neural resilience index</span> */}
+          {/* <Activity size={18} /> */}
         </div>
         <div className="brain-orb">
           <div className="orb-ring ring-one" />
           <div className="orb-ring ring-two" />
           <Brain size={74} />
         </div>
-        <div className="metric-row">
+        {/* <div className="metric-row">
           <div><strong><Counter value={9} /></strong><span>cognitive domains</span></div>
           <div><strong><Counter value={1} /> in <Counter value={9} /></strong><span>CDC signal</span></div>
           <div><strong><Counter value={4} /></strong><span>movement paths</span></div>
-        </div>
+        </div> */}
       </motion.div>
 
-      <div className="floating-card card-a"><Moon size={18} /> Sleep & circadian health</div>
-      <div className="floating-card card-b"><Network size={18} /> Multimodal AI</div>
+      <div className="floating-card card-a"><Moon size={18} />Elite Cognitive Performance</div>
+      <div className="floating-card card-b"><Network size={18} />Unbreakable Mental Resilience</div>
+      {/* <div className="floating-card card-b"><Network size={18} />Unbreakable Mental Resilience</div>
+      <div className="floating-card card-b"><Network size={18} />Unbreakable Mental Resilience</div> */}
       <a href="#about" className="scroll-cue" aria-label="Scroll to about"><ChevronDown size={22} /></a>
     </section>
   );

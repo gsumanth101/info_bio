@@ -34,7 +34,7 @@ export function FocusSection() {
           image={illustrations.aiResponse}
         />
       </Reveal>
-      <div className="feature-grid">
+      {/* <div className="feature-grid">
         {whatWeDo.map((item, index) => {
           const Icon = item.icon;
           return (
@@ -45,11 +45,11 @@ export function FocusSection() {
             </Reveal>
           );
         })}
-      </div>
-      <Reveal className="focus-cta">
+      </div> */}
+      {/* <Reveal className="focus-cta">
         <p>Our work blends neuroscience, technology, and public-health strategy to create solutions that are practical, scalable, and human-centered.</p>
         <MagneticButton href="#partners" className="secondary">Explore collaboration <ArrowRight size={18} /></MagneticButton>
-      </Reveal>
+      </Reveal> */}
     </section>
   );
 }

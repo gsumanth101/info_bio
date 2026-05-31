@@ -46,7 +46,7 @@ export function ContactSection({ onSubmit }) {
               <input name="email" required type="email" placeholder=" " />
               <span>Email</span>
             </label>
-            <label>
+            {/* <label>
               <select name="role" required defaultValue="">
                 <option value="" disabled>Choose your path</option>
                 <option>Technologist</option>
@@ -56,6 +56,10 @@ export function ContactSection({ onSubmit }) {
                 <option>Partner Organization</option>
               </select>
               <span>Path</span>
+            </label> */}
+            <label>
+              <input name="phone" required type="tel" placeholder=" " />
+              <span>Phone</span>
             </label>
             <label className="message-field">
               <textarea name="message" required placeholder=" " rows="5" />

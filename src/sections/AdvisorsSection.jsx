@@ -10,9 +10,9 @@ export function AdvisorsSection() {
   return (
     <section id="advisors" className="section advisors-section">
       <SectionIntro
-        eyebrow="Guided by Global Leaders"
+        eyebrow="Advisors"
         title="Scientific rigor shaped by a cross-disciplinary advisory network."
-        text="Our advisors steer our scientific focus, reinforce rigor, and ensure we remain attuned to worldwide needs and new breakthroughs."
+        text="Our global advisors steer our scientific focus, reinforce rigor, and ensure we remain attuned to worldwide needs and new breakthroughs."
       />
       {/* <Reveal className="advisor-illustration">
         <IllustrationPanel
