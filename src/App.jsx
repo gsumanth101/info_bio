@@ -12,6 +12,7 @@ import { ThinkTankSection } from './sections/ThinkTankSection.jsx';
 import { InsightsSection } from './sections/InsightsSection.jsx';
 import { PartnersSection } from './sections/PartnersSection.jsx';
 import { ContactSection } from './sections/ContactSection.jsx';
+import { Toaster } from "react-hot-toast";
 
 export default function App() {
   const active = useActiveSection();
@@ -44,30 +45,43 @@ export default function App() {
   };
 
   return (
-    <div className="site-shell">
-      <motion.div className="cursor-glow" style={glowStyle} />
-      <div className="background-grid" aria-hidden="true" />
-
-      <Header
-        active={active}
-        menuOpen={menuOpen}
-        onOpenMenu={() => setMenuOpen(true)}
-        onCloseMenu={() => setMenuOpen(false)}
+    <>
+      <Toaster
+        position="top-right"
+        toastOptions={{
+          duration: 4000,
+          style: {
+            borderRadius: "12px",
+            background: "#fff",
+            color: "#111",
+          },
+        }}
       />
+      <div className="site-shell">
+        <motion.div className="cursor-glow" style={glowStyle} />
+        <div className="background-grid" aria-hidden="true" />
 
-      <main>
-        <HeroSection />
-        <AboutSection />
-        <FocusSection />
-        <AdvisorsSection />
-        <ThinkTankSection />
-        <InsightsSection />
-        <PartnersSection />
-        <ContactSection onSubmit={submitForm} />
-      </main>
+        <Header
+          active={active}
+          menuOpen={menuOpen}
+          onOpenMenu={() => setMenuOpen(true)}
+          onCloseMenu={() => setMenuOpen(false)}
+        />
 
-      <Footer />
-      <Toast show={toast} />
-    </div>
+        <main>
+          <HeroSection />
+          <AboutSection />
+          <FocusSection />
+          <AdvisorsSection />
+          <ThinkTankSection />
+          <InsightsSection />
+          <PartnersSection />
+          <ContactSection onSubmit={submitForm} />
+        </main>
+
+        <Footer />
+        <Toast show={toast} />
+      </div>
+    </>
   );
 }
