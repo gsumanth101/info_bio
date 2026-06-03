@@ -20,7 +20,7 @@ export function ContactSection() {
       email: formData.get("email"),
       phone: formData.get("phone"),
       message: formData.get("message"),
-      siteName:'inversebionics.com',
+      siteName:'https://inversebionics.gov2partner.com/',
     };
 
     setLoading(true);
